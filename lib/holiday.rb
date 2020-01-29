@@ -64,10 +64,10 @@ end
 
 def all_holidays_with_bbq(holiday_hash)
   new_arr = []
-  holiday_hash.each do |season, holiday|
-    holiday.each do |holiday, item|
+  holiday_hash.each do |season, festival|
+    festival.each do |festival, item|
       if item.include?("BBQ")
-        new_arr.push(holiday)
+        new_arr.push(festival)
       end
     end
   end
