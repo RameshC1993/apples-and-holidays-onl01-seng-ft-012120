@@ -52,7 +52,15 @@ def all_winter_holiday_supplies(holiday_hash)
 end
 
 def all_supplies_in_holidays(holiday_hash)
-  puts holiday_hash
+  
+  holiday_hash.each do |key, value|
+    puts keys.to_s.capitalize
+    value.each do |festival, item|
+      new_arr = festival.to_s.split("_")
+      puts "#{new_arr[0].capitalize} #{new_arr[1].capitalize}"
+      puts value.to_s
+    end
+  end
 end
 
 def all_holidays_with_bbq(holiday_hash)
