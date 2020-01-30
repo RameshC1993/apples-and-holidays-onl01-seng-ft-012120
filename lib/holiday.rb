@@ -57,9 +57,10 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{key.to_s.capitalize}:"
     value.each do |festival, item|
       new_arr = festival.to_s.split("_")
-      new_arr.each_with_index do |element|
-        new_arr[index] = 
+      new_arr.each_with_index do |element, index|
+        new_arr[index] = element.capitalize
       end
+      puts "#{new_arr.join(" ")}:"
       
     end
     
