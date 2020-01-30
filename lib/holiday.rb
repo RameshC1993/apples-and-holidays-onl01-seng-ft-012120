@@ -57,8 +57,8 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{key.to_s.capitalize}:"
     value.each do |festival, item|
       new_arr = festival.to_s.split("_")
-      new_arr.each do |element|
-      str = element.capitalize
+      new_arr.capitalize
+      
     end
     
       puts value.to_s
