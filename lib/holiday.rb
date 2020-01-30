@@ -61,11 +61,11 @@ def all_supplies_in_holidays(holiday_hash)
         new_arr[index] = element.capitalize
       end
       puts "#{new_arr.join(" ")}:"
-      
-    end
-    
       puts value.to_s
     end
+    
+      
+    
   end
 end
 
