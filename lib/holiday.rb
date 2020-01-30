@@ -60,7 +60,15 @@ def all_supplies_in_holidays(holiday_hash)
       new_arr.each_with_index do |element, index|
         new_arr[index] = element.capitalize
       end
-      puts "  #{new_arr.join(" ")}: #{item.split(",").join(" ")}"
+      str = ""
+      item.each do |x|
+       if x == item.last 
+         str += x 
+       else
+         str += "#{x}, "
+       end
+      end
+      puts "  #{new_arr.join(" ")}: #{str}"
       
     end
     
